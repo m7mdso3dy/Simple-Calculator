@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+button{
+	width:50px;
+	height: 50px;
+	border-radius: 50%;
+	font-size: 1.2em;
+	font-weight: 700;
+}
+.sin,.cos,.tan{
+	display: inline;
+}
+.tri-fun{
+	display: flex;
+	grid-area:tri-fun;
+}
+.nums{
+	display: flex;
+	width: 150px;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	grid-area:nums;
+}
+.oper{
+	display: flex;
+	flex-direction: column;
+	grid-area:oper;
+}
+.input-buttons{
+	margin: 0 auto;
+	width:200px;
+	background-color: black;
+	border-radius: 10px;
+	display: grid;
+	grid-template-columns:150px 50px;
+	grid-template-areas:
+		"tri-fun oper"
+		"nums oper";
+}
+.input-space{
+	margin: 0 auto;
+	display: block;
+	width: 200px;
+	height: 65px;
+	background-color: beige;
+}
+
+.result , .text-field{
+	height: 50%;
+}
